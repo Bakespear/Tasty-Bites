@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Bites | Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tasty Bites</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Our Menu</h1>
+        
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="main">Main Dishes</button>
+            <button class="category-btn" data-category="appetizer">Appetizers</button>
+            <button class="category-btn" data-category="dessert">Desserts</button>
+            <button class="category-btn" data-category="drink">Drinks</button>
+        </div>
+
+        <div class="menu-items">
+            <!-- Main Dishes -->
+            <div class="menu-item" data-category="main">
+                <img src="images/food-items/grilled-chicken.jpg" alt="Grilled Chicken">
+                <h3>Grilled Chicken</h3>
+                <p>Juicy chicken breast with herbs and spices</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 850</span>
+                    <button class="add-to-cart" data-id="1" data-name="Grilled Chicken" data-price="850">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="main">
+                <img src="images/food-items/beef-burger.jpg" alt="Beef Burger">
+                <h3>Beef Burger</h3>
+                <p>Classic beef burger with cheese and veggies</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 650</span>
+                    <button class="add-to-cart" data-id="2" data-name="Beef Burger" data-price="650">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="main">
+                <img src="images/food-items/pizza-margherita.jpg" alt="Pizza">
+                <h3>Pizza Margherita</h3>
+                <p>12-inch pizza with fresh mozzarella</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 1200</span>
+                    <button class="add-to-cart" data-id="3" data-name="Pizza Margherita" data-price="1200">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="main">
+                <img src="images/food-items/grilled-salmon.jpg" alt="Grilled Salmon">
+                <h3>Grilled Salmon</h3>
+                <p>Fresh Atlantic salmon with lemon herb sauce</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 1500</span>
+                    <button class="add-to-cart" data-id="7" data-name="Grilled Salmon" data-price="1500">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="main">
+                <img src="images/food-items/beef-stew.jpg" alt="Beef Stew">
+                <h3>Beef Stew</h3>
+                <p>Slow-cooked tender beef with vegetables</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 950</span>
+                    <button class="add-to-cart" data-id="8" data-name="Beef Stew" data-price="950">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="main">
+                <img src="images/food-items/chicken-biryani.jpg" alt="Chicken Biryani">
+                <h3>Chicken Biryani</h3>
+                <p>Aromatic spiced rice with tender chicken</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 800</span>
+                    <button class="add-to-cart" data-id="9" data-name="Chicken Biryani" data-price="800">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="main">
+                <img src="images/food-items/vegetable-curry.jpg" alt="Vegetable Curry">
+                <h3>Vegetable Curry</h3>
+                <p>Mixed vegetables in coconut curry sauce</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 700</span>
+                    <button class="add-to-cart" data-id="10" data-name="Vegetable Curry" data-price="700">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="main">
+                <img src="images/food-items/lamb-kebabs.jpg" alt="Lamb Kebabs">
+                <h3>Lamb Kebabs</h3>
+                <p>Grilled lamb skewers with spices</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 1100</span>
+                    <button class="add-to-cart" data-id="11" data-name="Lamb Kebabs" data-price="1100">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Appetizers -->
+            <div class="menu-item" data-category="appetizer">
+                <img src="images/food-items/french-fries.jpg" alt="French Fries">
+                <h3>French Fries</h3>
+                <p>Crispy golden fries with seasoning</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 300</span>
+                    <button class="add-to-cart" data-id="4" data-name="French Fries" data-price="300">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="appetizer">
+                <img src="images/food-items/chicken-wings.jpg" alt="Chicken Wings">
+                <h3>Chicken Wings</h3>
+                <p>Crispy wings with buffalo sauce</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 550</span>
+                    <button class="add-to-cart" data-id="12" data-name="Chicken Wings" data-price="550">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="appetizer">
+                <img src="images/food-items/mozzarella-sticks.jpg" alt="Mozzarella Sticks">
+                <h3>Mozzarella Sticks</h3>
+                <p>Crispy breaded mozzarella with marinara</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 450</span>
+                    <button class="add-to-cart" data-id="13" data-name="Mozzarella Sticks" data-price="450">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="appetizer">
+                <img src="images/food-items/spring-rolls.jpg" alt="Spring Rolls">
+                <h3>Spring Rolls</h3>
+                <p>Crispy vegetable spring rolls with sweet chili</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 400</span>
+                    <button class="add-to-cart" data-id="14" data-name="Spring Rolls" data-price="400">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="appetizer">
+                <img src="images/food-items/garlic-bread.jpg" alt="Garlic Bread">
+                <h3>Garlic Bread</h3>
+                <p>Toasted bread with garlic butter and herbs</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 350</span>
+                    <button class="add-to-cart" data-id="15" data-name="Garlic Bread" data-price="350">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="appetizer">
+                <img src="images/food-items/onion-rings.jpg" alt="Onion Rings">
+                <h3>Onion Rings</h3>
+                <p>Crispy battered onion rings</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 380</span>
+                    <button class="add-to-cart" data-id="16" data-name="Onion Rings" data-price="380">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="menu-item" data-category="drink">
+                <img src="images/food-items/fresh-juice.jpeg" alt="Fresh Juice">
+                <h3>Fresh Juice</h3>
+                <p>Seasonal fruit juice</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 250</span>
+                    <button class="add-to-cart" data-id="5" data-name="Fresh Juice" data-price="250">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="drink">
+                <img src="images/food-items/coca-cola.jpg" alt="Coca Cola">
+                <h3>Coca Cola</h3>
+                <p>Classic cola drink</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 150</span>
+                    <button class="add-to-cart" data-id="17" data-name="Coca Cola" data-price="150">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="drink">
+                <img src="images/food-items/sprite.jpg" alt="Sprite">
+                <h3>Sprite</h3>
+                <p>Lemon-lime soda</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 150</span>
+                    <button class="add-to-cart" data-id="18" data-name="Sprite" data-price="150">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="drink">
+                <img src="images/food-items/iced-tea.jpg" alt="Iced Tea">
+                <h3>Iced Tea</h3>
+                <p>Refreshing peach iced tea</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 200</span>
+                    <button class="add-to-cart" data-id="19" data-name="Iced Tea" data-price="200">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="drink">
+                <img src="images/food-items/coffee.jpg" alt="Coffee">
+                <h3>Coffee</h3>
+                <p>Freshly brewed coffee</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 180</span>
+                    <button class="add-to-cart" data-id="20" data-name="Coffee" data-price="180">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="drink">
+                <img src="images/food-items/smoothie.jpg" alt="Fruit Smoothie">
+                <h3>Fruit Smoothie</h3>
+                <p>Blended tropical fruit smoothie</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 350</span>
+                    <button class="add-to-cart" data-id="21" data-name="Fruit Smoothie" data-price="350">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-item" data-category="dessert">
+                <img src="images/food-items/chocolate-cake.jpg" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Rich chocolate cake slice</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 450</span>
+                    <button class="add-to-cart" data-id="6" data-name="Chocolate Cake" data-price="450">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="dessert">
+                <img src="images/food-items/tiramisu.jpg" alt="Tiramisu">
+                <h3>Tiramisu</h3>
+                <p>Classic Italian coffee-flavored dessert</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 500</span>
+                    <button class="add-to-cart" data-id="22" data-name="Tiramisu" data-price="500">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="dessert">
+                <img src="images/food-items/ice-cream.jpg" alt="Vanilla Ice Cream">
+                <h3>Vanilla Ice Cream</h3>
+                <p>Creamy vanilla ice cream scoop</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 250</span>
+                    <button class="add-to-cart" data-id="23" data-name="Vanilla Ice Cream" data-price="250">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="dessert">
+                <img src="images/food-items/cheesecake.jpg" alt="Cheesecake">
+                <h3>Cheesecake</h3>
+                <p>New York style cheesecake</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 480</span>
+                    <button class="add-to-cart" data-id="24" data-name="Cheesecake" data-price="480">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="dessert">
+                <img src="images/food-items/brownies.jpg" alt="Chocolate Brownies">
+                <h3>Chocolate Brownies</h3>
+                <p>Fudgy chocolate brownies</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 350</span>
+                    <button class="add-to-cart" data-id="25" data-name="Chocolate Brownies" data-price="350">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="dessert">
+                <img src="images/food-items/pie.jpg" alt="Apple Pie">
+                <h3>Apple Pie</h3>
+                <p>Warm apple pie with cinnamon</p>
+                <div class="item-footer">
+                    <span class="price">Ksh 420</span>
+                    <button class="add-to-cart" data-id="26" data-name="Apple Pie" data-price="420">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tasty Bites Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

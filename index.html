@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Bites | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Puter.ai SDK -->
+    <script src="https://js.puter.com/v2/"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tasty Bites</div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Delicious Meals, Delivered Fast</h1>
+                <p>Experience the finest culinary delights in town</p>
+                <a href="menu.html" class="btn">Order Now</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>🍔 Fast Delivery</h3>
+                <p>30-minute delivery guarantee</p>
+            </div>
+            <div class="feature-card">
+                <h3>⭐ Top Quality</h3>
+                <p>Fresh ingredients daily</p>
+            </div>
+            <div class="feature-card">
+                <h3>💳 Easy Payments</h3>
+                <p>M-Pesa, Cash, Card</p>
+            </div>
+        </section>
+    </main>
+
+    <section class="feedback-section">
+        <h2>Share Your Feedback</h2>
+        <form id="feedback-form">
+            <div class="form-group">
+                <label for="customerName">Name (Optional):</label>
+                <input type="text" id="customerName" name="customerName">
+            </div>
+            <div class="form-group">
+                <label for="customerEmail">Email (Optional):</label>
+                <input type="email" id="customerEmail" name="customerEmail">
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="">Select Rating</option>
+                    <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                    <option value="4">⭐⭐⭐⭐ Very Good</option>
+                    <option value="3">⭐⭐⭐ Good</option>
+                    <option value="2">⭐⭐ Fair</option>
+                    <option value="1">⭐ Poor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comment">Your Feedback:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit Feedback</button>
+        </form>
+        <div id="feedback-response" style="margin-top: 20px;"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tasty Bites Restaurant. All rights reserved.</p>
+    </footer>
+
+    <!-- Chat Widgets -->
+    <!-- Google AI Chatbot (Right Side) -->
+    <div id="chat-widget-google">
+        <div id="chat-button-google">
+            <span>🤖</span>
+        </div>
+        <div id="chat-modal-google" class="chat-hidden">
+            <div id="chat-header-google">
+                <h3>Tasty Bites AI Assistant</h3>
+                <button id="chat-close-google">&times;</button>
+            </div>
+            <div id="chat-messages-google"></div>
+            <div id="chat-input-area-google">
+                <input type="text" id="chat-input-google" placeholder="Ask me anything about our restaurant...">
+                <button id="chat-send-google">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Puter.ai Chatbot (Left Side) -->
+    <div id="chat-widget-puter">
+        <div id="chat-button-puter">
+            <span>🧠</span>
+        </div>
+        <div id="chat-modal-puter" class="chat-hidden">
+            <div id="chat-header-puter">
+                <h3>Puter.ai Assistant</h3>
+                <button id="chat-close-puter">&times;</button>
+            </div>
+            <div id="chat-messages-puter"></div>
+            <div id="chat-input-area-puter">
+                <input type="text" id="chat-input-puter" placeholder="Ask me anything...">
+                <button id="chat-send-puter">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    
+    
+</body>
+</html>

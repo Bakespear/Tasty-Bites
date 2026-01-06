@@ -1,0 +1,32 @@
+[
+  {
+    "receivedAt": "2026-01-05T14:56:28.169Z",
+    "type": "stkCallback",
+    "MerchantRequestID": "123",
+    "CheckoutRequestID": "abc",
+    "ResultCode": 0,
+    "ResultDesc": "The service request is processed successfully.",
+    "metadata": {
+      "Amount": 1000,
+      "MpesaReceiptNumber": "ABC123XYZ"
+    },
+    "raw": {
+      "MerchantRequestID": "123",
+      "CheckoutRequestID": "abc",
+      "ResultCode": 0,
+      "ResultDesc": "The service request is processed successfully.",
+      "CallbackMetadata": {
+        "Item": [
+          {
+            "Name": "Amount",
+            "Value": 1000
+          },
+          {
+            "Name": "MpesaReceiptNumber",
+            "Value": "ABC123XYZ"
+          }
+        ]
+      }
+    }
+  }
+]
