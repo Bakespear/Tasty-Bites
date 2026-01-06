@@ -281,7 +281,7 @@ function setupPaymentForm() {
                 paymentMethod: 'mpesa'
             };
 
-            const orderResponse = await fetch('http://localhost:3000/api/orders', {
+            const orderResponse = await fetch('/api/orders', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(orderData)
@@ -296,7 +296,7 @@ function setupPaymentForm() {
             console.log('Order saved:', orderResult.orderId);
 
             // Then initiate payment
-            const paymentResponse = await fetch('http://localhost:3000/api/mpesa/stk-push', {
+            const paymentResponse = await fetch('/api/mpesa/stk-push', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ phone: phone, amount: parseInt(amountInput.value) })
@@ -399,7 +399,7 @@ if (feedbackForm) {
         responseDiv.style.color = '#007bff';
         
         try {
-            const response = await fetch('http://localhost:3000/api/feedback', {
+            const response = await fetch('/api/feedback', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -507,7 +507,7 @@ class ChatWidget {
         try {
             if (this.config.type === 'google') {
                 // Use Google AI via backend
-                const response = await fetch('http://localhost:3000/api/chat', {
+                const response = await fetch('/api/chat', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

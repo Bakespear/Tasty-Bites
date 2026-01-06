@@ -17,7 +17,7 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 // Serve static files from the parent directory (where index.html, css, js are located)
 app.use(express.static(path.join(__dirname, '..')));
 
-mongoose.connect('mongodb+srv://kelvincharming_db_user:h8bQKiy1mugRK58Q@project.l1xacsf.mongodb.net/tasty_bites?appName=Project', {
+mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://kelvincharming_db_user:h8bQKiy1mugRK58Q@project.l1xacsf.mongodb.net/tasty_bites?appName=Project', {
  
 })
 .then(async () => {
